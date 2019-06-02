@@ -1,5 +1,6 @@
-import Knex from 'knex'
-import moment from 'moment'
+'use strict'
+const Knex = require('knex'),
+	moment = require('moment')
 
 const stampToUTCDate = stamp => {
 	if(typeof stamp === 'string'){
@@ -18,7 +19,7 @@ const convertDateTime = (types, row) => {
 	})
 }
 
-export default ({table, rows, beforeEach, after, dbTypes, debug}) => {
+exports.default = ({table, rows, beforeEach, after, dbTypes, debug}) => {
 	var db = new Knex({
 		client: 'sqlite3',
 		debug: debug || false,

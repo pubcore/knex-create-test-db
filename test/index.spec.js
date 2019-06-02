@@ -1,5 +1,6 @@
-import {expect} from 'chai'
-import main from '../src/index'
+'use strict'
+const {expect} = require('chai'),
+	main = require('../js/index').default
 
 var rows = [
 		{
