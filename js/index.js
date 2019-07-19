@@ -19,7 +19,7 @@ const convertDateTime = (types, row) => {
 	})
 }
 
-exports.default = ({table, rows, beforeEach, after, dbTypes, debug}) => {
+module.exports = ({table, rows, beforeEach, after, dbTypes, debug}) => {
 	var db = new Knex({
 		client: 'sqlite3',
 		debug: debug || false,

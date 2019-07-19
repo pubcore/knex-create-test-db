@@ -1,6 +1,6 @@
 'use strict'
 const {expect} = require('chai'),
-	main = require('../js/index').default
+	main = require('../js/index')
 
 var rows = [
 		{
