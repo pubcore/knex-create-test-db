@@ -6,7 +6,7 @@
   "main": "js/index.js",
   "license": "MIT",
   "name": "@pubcore/knex-create-test-db",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "helper for unittest to create database table with knex",
   "directories": {
     "test": "test"
