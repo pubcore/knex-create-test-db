@@ -13,14 +13,13 @@ var rows = [
     {author:'king', published:new Date(), sold:42}
   ],
   table = 'books',
-  //optional
-  types = {author:'string', published:'dateTime', sold:'integer'}
+  dbTypes = {author:'string', published:'dateTime', sold:'integer'}
 
 describe('create test db', () => {
   //The test table will be created and droped for each "it" ("beforeEach" callback)
   //Knex will be destroyed after "describe" block finished ("after" callback)
 
-  var knex = createKnex({table, rows, beforeEach, after, types})
+  var knex = createKnex({table, rows, beforeEach, after, dbTypes})
 
   it('can be used to test some functionality dealing with a knex api', () => {
     expect( bookAvailable({author:'king'}, {db:{knex}}) ).to.be.true
