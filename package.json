@@ -32,9 +32,10 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "knex": "^0.21.15",
+    "@vscode/sqlite3": "^5.0.8",
+    "knex": "^1.0.4",
     "moment": "^2.27.0",
     "sqlite": "^4.0.19",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^4.2.0"
   }
 }
